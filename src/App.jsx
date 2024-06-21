@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
-import Ticket from './components/ticket'; // Asegúrate de que la ruta es correcta
+import Ticket from './components/ticket';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);

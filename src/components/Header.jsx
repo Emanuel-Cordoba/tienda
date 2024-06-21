@@ -12,7 +12,9 @@ export const Header = ({
   const [active, setActive] = useState(false);
 
   const onDeleteProduct = product => {
-    const results = allProducts.filter(item => item.id !== product.id);
+    const results = allProducts.filter(
+      item => item.id !== product.id
+    );
 
     setTotal(total - product.price * product.quantity);
     setCountProducts(countProducts - product.quantity);
@@ -99,7 +101,7 @@ export const Header = ({
               <button className='btn-clear-all' onClick={onCleanCart}>
                 Vaciar Carrito
               </button>
-              <Link to="/ticket">
+              <Link to="/ticket" state={{ allProducts, total }}>
                 <button className='conf'>Confirmar Compra</button>
               </Link>
             </>
