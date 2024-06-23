@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
-import Ticket from './components/Ticket';
+import Ticket from './components/ticket';
 import InfoCliente from './components/infocliente';
 
 function App() {

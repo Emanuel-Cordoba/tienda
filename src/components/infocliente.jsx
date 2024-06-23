@@ -30,6 +30,7 @@ const InfoCliente = () => {
           <input type="text" id="codigo-postal" name="codigo-postal" required />
         </div>
         <button type="submit">Enviar</button>
+      
       </form>
     </div>
   );

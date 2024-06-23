@@ -315,8 +315,13 @@ header {
 	box-sizing: border-box;
   }
   
-  .info-cliente button {
-	margin-top: 10px;
+ 
+#button-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .btn-volver {
 	padding: 10px 15px;
 	background-color: #007bff;
 	color: white;
@@ -325,12 +330,7 @@ header {
 	cursor: pointer;
   }
   
-  .info-cliente button:hover {
+  .btn-volver:hover {
 	background-color: #0056b3;
   }
-  input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
