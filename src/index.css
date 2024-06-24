@@ -28,7 +28,6 @@ img {
 	max-width: 100%;
 }
 
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -43,12 +42,10 @@ header {
 	position: absolute;
 	top: 55%;
 	right: 0;
-
 	background-color: #000;
 	color: #fff;
 	width: 25px;
 	height: 25px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,7 +60,6 @@ header {
 	position: absolute;
 	top: 50px;
 	right: 0;
-
 	background-color: #fff;
 	width: 400px;
 	z-index: 1;
@@ -76,7 +72,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding: 30px;
-
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -211,7 +206,7 @@ header {
   transition: all .3s ease;
 }
 
-.btn-clear-all:hover{
+.btn-clear-all:hover {
   background-color: #333;
   transform: scale(1.03);
   border-radius: 0;
@@ -233,15 +228,13 @@ header {
   transition: all .3s ease;
 }
 
-.conf:hover{
+.conf:hover {
 	background-color: #333;
 	transform: scale(1.03);
 	border-radius: 0;
-  }
+}
 
-
-  
-  #d1 {
+#d1 {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
@@ -249,73 +242,73 @@ header {
 	border-radius: 5px;
 	background-color: #f9f9f9;
 	font-family: Arial, sans-serif;
-  }
-  
-  #t1 {
+}
+
+#t1 {
 	background-color: #4400ff;
 	color: orange;
 	padding: 10px;
 	border-radius: 5px;
 	text-align: center;
 	margin-bottom: 20px;
-  }
-  
-  #p1 {
+}
+
+#p1 {
 	margin-bottom: 20px;
-  }
-  
-  #sub1 {
+}
+
+#sub1 {
 	margin-bottom: 10px;
-  }
-  
-  #productos {
+}
+
+#productos {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-  }
-  
-  #productos li {
+}
+
+#productos li {
 	border-bottom: 1px solid #ccc;
 	padding: 10px 0;
-  }
-  
-  #productos li:last-child {
+}
+
+#productos li:last-child {
 	border-bottom: none;
-  }
-  
-  h3 {
+}
+
+h3 {
 	text-align: right;
 	margin-top: 20px;
-  }
+}
 
-  .info-cliente {
+.info-cliente {
 	margin-top: 20px;
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background-color: #f9f9f9;
-  }
-  
-  .info-cliente h2 {
+}
+
+.info-cliente h2 {
 	margin-bottom: 15px;
-  }
-  
-  .info-cliente form div {
+}
+
+.info-cliente form div {
 	margin-bottom: 10px;
-  }
-  
-  .info-cliente label {
+}
+
+.info-cliente label {
 	display: block;
 	margin-bottom: 5px;
-  }
-  
-  .info-cliente input {
+}
+
+.info-cliente input {
 	width: 100%;
 	padding: 8px;
 	box-sizing: border-box;
-  }
-  
-  .info-cliente button {
+}
+
+.info-cliente button {
 	margin-top: 10px;
 	padding: 10px 15px;
 	background-color: #007bff;
@@ -323,31 +316,34 @@ header {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-  }
-  
-  .info-cliente button:hover {
+}
+
+.info-cliente button:hover {
 	background-color: #0056b3;
-  }
-  input[type=number]::-webkit-outer-spin-button,
+}
+
+input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-#button-container {
+
+.button-container {
 	display: flex;
-	align-items: center;
-  }
-  
-  .btn-volver {
+	justify-content: flex-start;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.btn-volver {
 	padding: 10px 15px;
 	background-color: #007bff;
 	color: white;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-  }
-  
-  .btn-volver:hover {
-	background-color: #0056b3;
-  }
+}
 
+.btn-volver:hover {
+	background-color: #0056b3;
+}

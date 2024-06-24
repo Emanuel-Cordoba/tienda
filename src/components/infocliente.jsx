@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const InfoCliente = () => {
   return (
@@ -18,8 +19,8 @@ const InfoCliente = () => {
           <input type="text" id="apellido" name="apellido" required />
         </div>
         <div>
-        <label htmlFor="dni">DNI:</label>
-        <input type="number" id="dni" name="dni" inputMode="numeric" required />
+          <label htmlFor="dni">DNI:</label>
+          <input type="number" id="dni" name="dni" inputMode="numeric" required />
         </div>
         <div>
           <label htmlFor="direccion">Dirección:</label>
@@ -29,8 +30,12 @@ const InfoCliente = () => {
           <label htmlFor="codigo-postal">Código Postal:</label>
           <input type="text" id="codigo-postal" name="codigo-postal" required />
         </div>
-        <button type="submit">Enviar</button>
-      
+        <div className="button-container">
+          <button type="submit">Enviar</button>
+          <Link to="/">
+            <button type="button" className="btn-volver">Volver a la Tienda</button>
+          </Link>
+        </div>
       </form>
     </div>
   );

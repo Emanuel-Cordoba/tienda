@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
 import Ticket from './components/ticket';
-import InfoCliente from './components/infocliente';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -36,15 +35,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/ticket"
-          element={
-            <>
-              <Ticket />
-              <InfoCliente />
-            </>
-          }
-        />
+        <Route path="/ticket" element={<Ticket />} />
       </Routes>
     </Router>
   );
