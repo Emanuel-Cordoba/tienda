@@ -1,10 +1,18 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
 const Ticket = () => {
   const location = useLocation();
-  const { allProducts, total } = location.state || { allProducts: [], total: 0 };
+  const { allProducts, total: initialTotal } = location.state || { allProducts: [], total: 0 };
+  const [paymentMethod, setPaymentMethod] = useState('efectivo');
+  
+  let adjustedTotal = initialTotal;
+
+  if (paymentMethod === 'tarjeta') {
+    adjustedTotal = initialTotal * 1.1; // 10% increase
+  } else if (paymentMethod === 'efectivo') {
+    adjustedTotal = initialTotal * 0.9; // 10% discount
+  }
 
   return (
     <div id="ticket-container">
@@ -19,7 +27,18 @@ const Ticket = () => {
             </li>
           ))}
         </ul>
-        <h3>Total: ${total}</h3>
+        <h3>Total: ${adjustedTotal.toFixed(2)}</h3>
+        <div>
+          <label htmlFor="payment-method">Método de Pago:</label>
+          <select
+            id="payment-method"
+            value={paymentMethod}
+            onChange={(e) => setPaymentMethod(e.target.value)}
+          >
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta">Tarjeta</option>
+          </select>
+        </div>
       </div>
       <div className="info-cliente">
         <h2>Información del Cliente</h2>
@@ -51,7 +70,7 @@ const Ticket = () => {
           <div className="button-container">
             <button type="submit">Enviar</button>
             <Link to="/">
-              <button type="button" className="btn-volver">Volver a la Tienda</button>
+              <button className="btn-volver" type="button">Volver a la Tienda</button>
             </Link>
           </div>
         </form>
